@@ -1,0 +1,64 @@
+/* Common CSS Start */
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Common CSS End */
+
+header{
+    background-color: #FFFFFF;
+}
+nav{
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    gap: 30px;
+}
+.menu ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.menu ul li a:hover{
+    color: #30B868;
+}
+nav button{
+    padding: 12px 16px;
+    background-color: #30B868;
+    border: 2px solid #30B868;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .3s;
+}
+nav button:hover{
+    background-color: #FFFFFF;
+    color: #30B868;
+}
