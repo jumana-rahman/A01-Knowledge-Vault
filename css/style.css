@@ -22,10 +22,7 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: 1140px;
     margin: 0 auto;
 }
-/* Common CSS End */
-
-/* Shared Styles */
-.btn{
+.btn-green{
     padding: 12px 16px;
     background-color: #30B868;
     border: 2px solid #30B868;
@@ -33,15 +30,37 @@ h1,h2,h3,h4,h5,h6,p{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
     text-transform: capitalize;
+}
+.btn-green-hover{
     transition: .3s;
 }
-.btn:hover{
-    background-color: #FFFFFF;
+.btn-green-hover:hover{
     color: #30B868;
+    background-color: transparent;
 }
-/* Shared Styles */
+.btn-white{
+    padding: 12px 16px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn-white-hover{
+    transition: .3s;
+}
+.btn-white-hover:hover{
+    background-color: #30B868;
+    border: 1px solid #30B868;
+}
+/* Common CSS End*/
 
+/* Header Part Start */
 header{
     background-color: #FFFFFF;
 }
@@ -51,6 +70,8 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
+/* Menu Part Start */
 .menu ul{
     display: flex;
     gap: 30px;
@@ -65,8 +86,11 @@ nav{
 .menu ul li a:hover{
     color: #30B868;
 }
+/* Menu Part End */
+
+/* Banner Part Start */
 #banner{
-    padding: 80px 0 130px 0;
+    padding: 80px 0 160px 0;
     background-image: url("../assets/hero-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,3 +113,99 @@ nav{
     color: #30B868;
     text-transform: capitalize;
 }
+.banner-contents h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 610px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    padding: 25px 0;
+}
+.banner-contents h2 span{
+    color: #30B868;
+}
+.banner-contents p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 690px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+.banner-button button{
+    margin-left: 10px;
+}
+.banner-button button i{
+    margin: 0 6px;
+}
+.banner-button .btn-green{
+    transition: .3s;
+}
+.banner-button .btn-green:hover{
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+/* Banner Part End */
+/* Header Part End */
+
+/* Note Section End */
+#notes{
+    padding-top: 65px;
+    background-color: rgba(98, 115, 130, 0.1);
+}
+.notes-header{
+    text-align: center;
+}
+.notes-header h1{
+    color: #001931;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.notes-header p{
+    color: #627382;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 44px;
+}
+.notes-card{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    background: #FFFFFF;
+    padding: 64px 24px 24px 24px;
+    max-width: 322px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card img{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #F95555;
+}
+.card h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #001931;
+    text-transform: capitalize;
+    padding: 16px 0;
+}
+.card p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #627382;
+    padding-bottom: 12px;
+    width: 250px;
+}
+/* Note Section End */
+
+/* Second Brain Section Start */
+#brain-section{
+    padding: 120px 0;
+    background-color: #FFFFFF;
+}
+/* Second Brain End Start */
