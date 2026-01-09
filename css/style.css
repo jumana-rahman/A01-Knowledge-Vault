@@ -157,23 +157,29 @@ nav{
 .notes-header{
     text-align: center;
 }
-.notes-header h1{
-    color: #001931;
+.notes-header h3,
+.brain-contents h3, 
+.access-contents h3 {
     font-size: 35px;
     font-weight: 700;
+    color: #001931;
     text-transform: capitalize;
-    padding-bottom: 15px;
+    padding: 16px 0;
 }
-.notes-header p{
-    color: #627382;
+.notes-header p,
+.brain-contents p, 
+.access-contents p{
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 44px;
+    color: #627382;
+    line-height: 20px;
+    padding-bottom: 20px;
 }
 .notes-card{
     display: flex;
     gap: 30px;
     justify-content: center;
+    padding-top: 30px;
 }
 .card{
     background: #FFFFFF;
@@ -205,7 +211,50 @@ nav{
 
 /* Second Brain Section Start */
 #brain-section{
-    padding: 120px 0;
+    padding: 80px 0;
     background-color: #FFFFFF;
 }
+.brain-structure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.brain-contents h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: #30B868;
+    text-transform: uppercase;
+}
+.brain-contents ul li{
+    font-size: 16px;
+    font-weight: 500;
+    color: #001931;
+    padding-top: 10px;
+}
+.brain-contents ul li i{
+    color: #30B868;
+    padding-right: 6px;
+}
 /* Second Brain End Start */
+
+/* Early Access Section Start */
+#access{
+    padding-bottom: 80px;
+}
+.access-contents{
+    padding: 80px 300px;
+    background-color: rgba(98, 115, 130, 0.2);
+    text-align: center;
+}
+.access-contents button{
+    margin-bottom: 18px;
+    transition: .3s;
+}
+.access-contents button:hover{
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.access-contents button i{
+    padding-left: 8px;
+}
+/* Early Access Section End */
